@@ -6,6 +6,8 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 app.get("/api/v1/hello", (req, res) => res.json({status: "success", data: "hello world"}))
 
+app.get("/api/v1/heroku", (req, res) => res.json({status: "success", data: "[HEROKU] I am dead...i am no longer free!"}))
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
